@@ -67,7 +67,8 @@ namespace Exercicio02
         private void button1_Click(object sender, EventArgs e)
         {
             progressBar1.Value = Lanterna.capacidade;
-            btnLigaDesliga.Enabled = true;
+            btnLigaDesliga.Enabled = true;            
+            lblCapacidade.Text = $"{progressBar1.Value}%";
         }
 
         private void lblLink_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
