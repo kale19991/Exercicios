@@ -1,5 +1,6 @@
 ﻿using Exercicio02.Models;
 using System;
+using System.Diagnostics;
 using System.Drawing;
 using System.Windows.Forms;
 
@@ -67,6 +68,16 @@ namespace Exercicio02
         {
             progressBar1.Value = Lanterna.capacidade;
             btnLigaDesliga.Enabled = true;
+        }
+
+        private void lblLink_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Process.Start("https://github.com/kale19991");
+        }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Process.Start("https://github.com/kale19991/Exercicios");
         }
     }
 }
